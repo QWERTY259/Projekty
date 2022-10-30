@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #66259c;
+    height: auto;
+    font-family: montserrat, arial, verdana;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+.button {
+    position: absolute;
+    width: 7vh;
+    height: 7vh;
+    bottom: 1vh;
+    right: 1vh;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 1s linear;
+}
+
+#log {
+    top: 2vh;
+    right: 1vh;
+    height: auto;
+    width: 8vh;
+    border-radius: 0%;
+}
+
+#add_b {
+    z-index: 2;
+}
+
+.loader {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    z-index: 20;
+}
+
+#nav {
+    background-color: #ffff;
+    position: absolute;
+    z-index: 0;
+    top: 0vh;
+    width: 100%;
+    height: 10%;
+}
+
+#text {
+    font-weight: bold;
+	font-size: 2vh;
+	color: #66259c;
+	margin-bottom: 20px;
+    text-align: center;
+    margin-right: 10vh;
+}
