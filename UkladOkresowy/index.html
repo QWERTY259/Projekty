@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <script>
+        
+        function show()
+        {
+            var pole = document.getElementById("pole").value;
+            document.write(pole);
+        }
+        
+        function showdescb(number, display)
+        {
+            var elem = document.getElementById(number);
+            elem.style.display = display;
+            if(window.innerWidth > 1230)
+            {
+               elem.style.display = display;
+            }
+            else
+            {
+                elem.style.display = "none";
+            }
+        }
+        
+        function size()
+        {
+            var nazwa = document.getElementsByClassName("nazwa");
+            if(window.innerWidth > 1230)
+            {
+                for(var i = 0; i < nazwa.length; i++)
+                {
+                    nazwa[i].style.display = "inline"; 
+                }
+            }
+            else
+            {
+                for(var i = 0; i < nazwa.length; i++)
+                {
+                    nazwa[i].style.display = "none";
+                }
+            }
+            
+            /*var nazwa = document.querySelector(".nazwa");
+            if(window.innerWidth > 1250)
+            {
+                nazwa.style.display = "inline";
+            }
+            else
+            {
+                nazwa.style.display = "none";
+            } */
+        }
+    
+    </script>
+	
+	<title>Układ okresowy</title>
+	<meta name="description" content="Interaktywny układ okresowy stworzony przez uczniów WOLI">
+	<meta name="author" content="Maja Niemirowicz">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+    <link rel="icon" href="img/logo.png" type="image">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="main.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+	
+	
+</head>
+
+<body id="body" onload="size()">
+
+	<header>
+	
+		<nav style="text-align: center;"  class="navbar navbar-dark bg-pasek navbar-expand-lg">
+		
+			<a class="navbar-brand" href="#"><img src="img/logotyp.png" width="50" height="30" class="d-inline-block mr-1 align-bottom"  alt=""> Układ okresowy</a>
+		
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu" aria-controls="mainmenu" aria-expanded="false" aria-label="Przełącznik nawigacji">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<div class="collapse navbar-collapse" id="mainmenu">
+			
+				<ul class="navbar-nav mr-auto">
+				
+					<li class="nav-item active">
+						<a class="nav-link" href=""> Start </a>
+					</li>
+					
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false" id="submenu" aria-haspopup="true"> Szkoła </a>
+						
+						<div class="dropdown-menu" aria-labelledby="submenu">
+						
+							<a class="dropdown-item" target="_blank" href="https://woli.wat.edu.pl/"> Strona </a>
+							
+							<div class="dropdown-divider"></div>
+							
+							<a class="dropdown-item" target="_blank"href="https://www.facebook.com/woli.wat/"> Facebook </a>
+						
+						</div>
+						
+				
+				</ul>
+			
+			</div>
+		
+		</nav>
+	
+	</header>
+	
+	<main>
+		
+		<section>
+		
+				
+				<header>
+					
+					<h1>Interaktywny układ okresowy</h1>
+					<p>Projekt stworzony wspólnie przez uczniów Wojskowego Ogólnokształcącego Liceum Informatycznego.</p>
+						
+				</header>
+                
+                <hr>
+                
+                <div>
+                    
+                    <table align="center" width="100%"><tbody><tr><td></td><td valign="bottom">&nbsp;1</td><td colspan="16"></td><td valign="bottom">18</td></tr><tr><td class="okres">1</td><td class="komorka" onmouseover="showdescb('1','')" onmouseout="showdescb('1','none')"><a href="index.php?id=1"><div><span ><sub class="nazwa">1</sub></span>&nbsp;<span class="pierwiastek">H</span><br><span class="nazwa">Wodór</span></div></a>
+
+<td valign="bottom">2</td><td></td><td colspan="3" rowspan="2">
+  
+<div style="display: none;"  id="1" ><div class="descb"><span class="masowa1">Masa atomowa: 1.0078</span><br><span ><sub>1</sub></span>&nbsp;<span class="pierwiastek1">H</span><br><span sclass="nazwa1">Wodór</span></div></div>
+    
+<div style="display: none;" id="2" ><div class="descb"><span class="masowa1">Masa atomowa: 4.0026</span><br><span ><sub>2</sub></span>&nbsp;<span class="pierwiastek1">He</span><br><span class="nazwa1">Hel</span></div></div>
+
+<div style="display: none;" id="3" ><div class="descb"><span class="masowa1">Masa atomowa: 6.941</span><br><span ><sub>3</sub></span>&nbsp;<span class="pierwiastek1">Li</span><br><span class="nazwa1">Lit</span></div></div>
+
+<div style="display: none;" id="4" ><div class="descb"><span class="masowa1">Masa atomowa: 9.0121</span><br><span ><sub>4</sub></span>&nbsp;<span class="pierwiastek1">Be</span><br><span class="nazwa1">Beryl</span></div></div>
+
+<div style="display: none;" id="5" ><div class="descb"><span class="masowa1">Masa atomowa: 10.811</span><br><span ><sub>5</sub></span>&nbsp;<span class="pierwiastek1">B</span><br><span class="nazwa1">Bor</span></div></div>
+
+<div style="display: none;" id="6" ><div class="descb"><span class="masowa1">Masa atomowa: 12.0107</span><br><span ><sub>6</sub></span>&nbsp;<span class="pierwiastek1">C</span><br><span class="nazwa1">Węgiel</span></div></div>
+
+<div style="display: none;" id="7" ><div class="descb"><span class="masowa1">Masa atomowa: 14.0067</span><br><span ><sub>7</sub></span>&nbsp;<span class="pierwiastek1">N</span><br><span class="nazwa1">Azot</span></div></div>
+
+<div style="display: none;" id="8" ><div class="descb"><span class="masowa1">Masa atomowa: 15.9994</span><br><span ><sub>8</sub></span>&nbsp;<span class="pierwiastek1">O</span><br><span class="nazwa1">Tlen</span></div></div>
+
+<div style="display: none;" id="9" ><div class="descb"><span class="masowa1">Masa atomowa: 18.9984</span><br><span ><sub>9</sub></span>&nbsp;<span class="pierwiastek1">F</span><br><span class="nazwa1">Fluor</span></div></div>
+
+<div style="display: none;" id="10" ><div class="descb"><span class="masowa1">Masa atomowa: 20.1797</span><br><span ><sub>10</sub></span>&nbsp;<span class="pierwiastek1">Ne</span><br><span class="nazwa1">Neon</span></div></div>
+
+<div style="display: none;" id="11" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 22.9898</span><br><span ><sub>11</sub></span>&nbsp;<span class="pierwiastek1">Na</span><br><span class="nazwa1">Sód</span></div></div>
+
+<div style="display: none;" id="12" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 24.3050</span><br><span ><sub>12</sub></span>&nbsp;<span class="pierwiastek1">Mg</span><br><span class="nazwa1">Magnez</span></div></div>
+
+<div style="display: none;" id="13" ><div class="descb"><span class="masowa1">Masa atomowa: 26.9815</span><br><span ><sub>13</sub></span>&nbsp;<span class="pierwiastek1">Al</span><br><span class="nazwa1">Glin</span></div></div>
+
+<div style="display: none;" id="14" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 28.0855</span><br><span ><sub>14</sub></span>&nbsp;<span class="pierwiastek1">Si</span><br><span class="nazwa1">Krzem</span></div></div>
+
+<div style="display: none;" id="15" ><div class="descb"><span class="masowa1">Masa atomowa: 30.9738</span><br><span ><sub>15</sub></span>&nbsp;<span class="pierwiastek1">P</span><br><span class="nazwa1">Fosfor</span></div></div>
+
+<div style="display: none;" id="16" ><div class="descb"><span class="masowa1">Masa atomowa: 32.065</span><br><span ><sub>16</sub></span>&nbsp;<span class="pierwiastek1">S</span><br><span class="nazwa1">Siarka</span></div></div>
+
+<div style="display: none;" id="17" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 35.453</span><br><span ><sub>17</sub></span>&nbsp;<span class="pierwiastek1">Cl</span><br><span class="nazwa1">Chlor</span></div></div>
+
+<div style="display: none;" id="18" ><div class="descb"><span class="masowa1">Masa atomowa: 39.948</span><br><span ><sub>18</sub></span>&nbsp;<span class="pierwiastek1">Ar</span><br><span class="nazwa1">Argon</span></div></div>
+
+<div style="display: none;" id="19" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 39.0938</span><br><span ><sub>19</sub></span>&nbsp;<span class="pierwiastek1">K</span><br><span class="nazwa1">Potas</span></div></div>
+
+<div style="display: none;" id="20" ><div class="descb"><span class="masowa1">Masa atomowa: 40.078</span><br><span ><sub>20</sub></span>&nbsp;<span class="pierwiastek1">Ca</span><br><span class="nazwa1">Wapń</span></div></div>
+
+<div style="display: none;" id="21" ><div class="descb"><span class="masowa1">Masa atomowa: 44.9559</span><br><span ><sub>21</sub></span>&nbsp;<span class="pierwiastek1">Sc</span><br><span class="nazwa1">Skand</span></div></div>
+
+<div style="display: none;" id="22" ><div class="descb"><span class="masowa1">Masa atomowa: 47.867</span><br><span ><sub>22</sub></span>&nbsp;<span class="pierwiastek1">Ti</span><br><span class="nazwa1">Tytan</span></div></div>
+
+<div style="display: none;" id="23" ><div class="descb"><span class="masowa1">Masa atomowa: 50.9415</span><br><span ><sub>23</sub></span>&nbsp;<span class="pierwiastek1">V</span><br><span class="nazwa1">Wanad</span></div></div>
+
+<div style="display: none;" id="24" ><div class="descb"><span class="masowa1">Masa atomowa: 51.9961</span><br><span ><sub>24</sub></span>&nbsp;<span class="pierwiastek1">Cr</span><br><span class="nazwa1">Chrom</span></div></div>
+
+<div style="display: none;" id="25" ><div class="descb"><span class="masowa1">Masa atomowa: 54.938</span><br><span ><sub>25</sub></span>&nbsp;<span class="pierwiastek1">Mn</span><br><span class="nazwa1">Mangan</span></div></div>
+
+<div style="display: none;" id="26" ><div class="descb"><span class="masowa1">Masa atomowa: 55.845</span><br><span ><sub>26</sub></span>&nbsp;<span class="pierwiastek1">Fe</span><br><span class="nazwa1">Żelazo</span></div></div>
+
+<div style="display: none;" id="27" ><div class="descb"><span class="masowa1">Masa atomowa: 58.9332</span><br><span ><sub>27</sub></span>&nbsp;<span class="pierwiastek1">Co</span><br><span class="nazwa1">Kobalt</span></div></div>
+
+<div style="display: none;" id="28" ><div class="descb"><span class="masowa1">Masa atomowa: 58.6934</span><br><span ><sub>28</sub></span>&nbsp;<span class="pierwiastek1">Ni</span><br><span class="nazwa1">Nikiel</span></div></div>
+
+<div style="display: none;" id="29" ><div class="descb"><span class="masowa1">Masa atomowa: 63.546</span><br><span ><sub>29</sub></span>&nbsp;<span class="pierwiastek1">Cu</span><br><span class="nazwa1">Miedź</span></div></div>
+
+<div style="display: none;" id="30" ><div class="descb"><span class="masowa1">Masa atomowa: 65.409</span><br><span ><sub>30</sub></span>&nbsp;<span class="pierwiastek1">Zn</span><br><span class="nazwa1">Cynk</span></div></div>
+
+<div style="display: none;" id="31" ><div class="descb"><span class="masowa1">Masa atomowa: 69.723</span><br><span ><sub>31</sub></span>&nbsp;<span class="pierwiastek1">Ga</span><br><span class="nazwa1">Gal</span></div></div>
+
+<div style="display: none;" id="32" ><div class="descb"><span class="masowa1">Masa atomowa: 72.64</span><br><span ><sub>32</sub></span>&nbsp;<span class="pierwiastek1">Ge</span><br><span class="nazwa1">German</span></div></div>
+
+<div style="display: none;" id="33" ><div class="descb"><span class="masowa1">Masa atomowa: 74.9216</span><br><span ><sub>33</sub></span>&nbsp;<span class="pierwiastek1">As</span><br><span class="nazwa1">Arsen</span></div></div>
+
+<div style="display: none;" id="34" ><div class="descb"><span class="masowa1">Masa atomowa: 78.96</span><br><span ><sub>34</sub></span>&nbsp;<span class="pierwiastek1">Se</span><br><span class="nazwa1">Selen</span></div></div>
+
+<div style="display: none;" id="35" ><div class="descb"><span class="masowa1">Masa atomowa: 79.904</span><br><span ><sub>35</sub></span>&nbsp;<span class="pierwiastek1">Br</span><br><span class="nazwa1">Brom</span></div></div>
+
+<div style="display: none;" id="36" ><div class="descb"><span class="masowa1">Masa atomowa: 83.798</span><br><span ><sub>36</sub></span>&nbsp;<span class="pierwiastek1">Kr</span><br><span class="nazwa1">Krypton</span></div></div>
+
+<div style="display: none;" id="37" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 85.4678</span><br><span ><sub>37</sub></span>&nbsp;<span class="pierwiastek1">Rb</span><br><span class="nazwa1">Rubid</span></div></div>
+
+<div style="display: none;" id="38" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 87.62</span><br><span ><sub>38</sub></span>&nbsp;<span class="pierwiastek1">Sr</span><br><span class="nazwa1">Stront</span></div></div>
+
+<div style="display: none;" id="39" ><div class="descb"><span class="masowa1">Masa atomowa: 88.9059</span><br><span ><sub>39</sub></span>&nbsp;<span class="pierwiastek1">Y</span><br><span class="nazwa1">Itr</span></div></div>
+
+<div style="display: none;" id="40" ><div class="descb"><span class="masowa1">Masa atomowa: 91.224</span><br><span ><sub>40</sub></span>&nbsp;<span class="pierwiastek1">Zr</span><br><span class="nazwa1">Cyrkon</span></div></div>
+
+<div style="display: none;" id="41" ><div class="descb"><span class="masowa1">Masa atomowa: 92.9064</span><br><span ><sub>41</sub></span>&nbsp;<span class="pierwiastek1">Nb</span><br><span class="nazwa1">Niob</span></div></div>
+
+<div style="display: none;" id="42" ><div class="descb"><span class="masowa1">Masa atomowa: 95.94</span><br><span ><sub>42</sub></span>&nbsp;<span class="pierwiastek1">Mo</span><br><span class="nazwa1">Molibden</span></div></div>
+
+<div style="display: none;" id="43" ><div class="descb"><span class="masowa1">Masa atomowa: 97.9072</span><br><span ><sub>43</sub></span>&nbsp;<span class="pierwiastek1">Tc</span><br><span class="nazwa1">Technet</span></div></div>
+
+<div style="display: none;" id="44" ><div class="descb"><span class="masowa1">Masa atomowa: 101.07</span><br><span ><sub>44</sub></span>&nbsp;<span class="pierwiastek1">Ru</span><br><span class="nazwa1">Ruten</span></div></div>
+
+<div style="display: none;" id="45" ><div class="descb"><span class="masowa1">Masa atomowa: 102.9055</span><br><span ><sub>45</sub></span>&nbsp;<span class="pierwiastek1">Rh</span><br><span class="nazwa1">Rod</span></div></div>
+
+<div style="display: none;" id="46" ><div class="descb"><span class="masowa1">Masa atomowa: 106.42</span><br><span ><sub>46</sub></span>&nbsp;<span class="pierwiastek1">Pd</span><br><span class="nazwa1">Pallad</span></div></div>
+
+<div style="display: none;" id="47" ><div class="descb"><span class="masowa1">Masa atomowa: 107.8682</span><br><span ><sub>47</sub></span>&nbsp;<span class="pierwiastek1">Ag</span><br><span class="nazwa1">Srebro</span></div></div>
+
+<div style="display: none;" id="48" ><div class="descb"><span class="masowa1">Masa atomowa: 112.411</span><br><span ><sub>48</sub></span>&nbsp;<span class="pierwiastek1">Cd</span><br><span class="nazwa1">Kadm</span></div></div>
+
+<div style="display: none;" id="49" ><div class="descb"><span class="masowa1">Masa atomowa: 114.818</span><br><span ><sub>49</sub></span>&nbsp;<span class="pierwiastek1">In</span><br><span class="nazwa1">Ind</span></div></div>
+
+<div style="display: none;" id="50" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 118.710</span><br><span ><sub>50</sub></span>&nbsp;<span class="pierwiastek1">Sn</span><br><span class="nazwa1">Cyna</span></div></div>
+
+<div style="display: none;" id="51" ><div class="descb"><span class="masowa1">Masa atomowa: 121.760</span><br><span ><sub>51</sub></span>&nbsp;<span class="pierwiastek1">Sb</span><br><span class="nazwa1">Antimony</span></div></div>
+
+<div style="display: none;" id="52" ><div class="descb"><span class="masowa1">Masa atomowa: 127.60</span><br><span ><sub>52</sub></span>&nbsp;<span class="pierwiastek1">Te</span><br><span class="nazwa1">Tellur</span></div></div>
+
+<div style="display: none;" id="53" ><div class="descb"><span class="masowa1">Masa atomowa: 126.9045</span><br><span ><sub>53</sub></span>&nbsp;<span class="pierwiastek1">I</span><br><span class="nazwa1">Jod</span></div></div>
+
+<div style="display: none;" id="54" ><div class="descb"><span class="masowa1">Masa atomowa: 131.293</span><br><span ><sub>54</sub></span>&nbsp;<span class="pierwiastek1">Xe</span><br><span class="nazwa1">Ksenon</span></div></div>
+
+<div style="display: none;" id="55" ><div class="descb"><span class="masowa1">Masa atomowa: 132.9055</span><br><span ><sub>55</sub></span>&nbsp;<span class="pierwiastek1">Cs</span><br><span class="nazwa1">Cez</span></div></div>
+
+<div style="display: none;" id="56" ><div class="descb"><span class="masowa1">Masa atomowa: 137.327</span><br><span ><sub>56</sub></span>&nbsp;<span class="pierwiastek1">Ba</span><br><span class="nazwa1">Bar</span></div></div>
+
+<div style="display: none;" id="57" ><div class="descb"><span class="masowa1">Masa atomowa: 138.9055</span><br><span ><sub>57</sub></span>&nbsp;<span class="pierwiastek1">La</span><br><span class="nazwa1">Lantan</span></div></div>
+
+<div style="display: none;" id="58" ><div class="descb"><span class="masowa1">Masa atomowa: 140.116</span><br><span ><sub>58</sub></span>&nbsp;<span class="pierwiastek1">Ce</span><br><span class="nazwa1">Cer</span></div></div>
+
+<div style="display: none;" id="59" ><div class="descb"><span class="masowa1">Masa atomowa: 140.9077</span><br><span ><sub>59</sub></span>&nbsp;<span class="pierwiastek1">Pr</span><br><span class="nazwa1">Prazeodym</span></div></div>
+
+<div style="display: none;" id="60" ><div class="descb"><span class="masowa1">Masa atomowa: 144.24</span><br><span ><sub>60</sub></span>&nbsp;<span class="pierwiastek1">Nd</span><br><span class="nazwa1">Neodym</span></div></div>
+
+<div style="display: none;" id="61" ><div class="descb"><span class="masowa1">Masa atomowa: 144.9127</span><br><span ><sub>61</sub></span>&nbsp;<span class="pierwiastek1">Pm</span><br><span class="nazwa1">Promet</span></div></div>
+
+<div style="display: none;" id="62" ><div class="descb"><span class="masowa1">Masa atomowa: 150.36</span><br><span ><sub>62</sub></span>&nbsp;<span class="pierwiastek1">Sm</span><br><span class="nazwa1">Samar</span></div></div>
+
+<div style="display: none;" id="63" ><div class="descb"><span class="masowa1">Masa atomowa: 151.964</span><br><span ><sub>63</sub></span>&nbsp;<span class="pierwiastek1">Eu</span><br><span class="nazwa1">Europ</span></div></div>
+
+<div style="display: none;" id="64" ><div class="descb"><span class="masowa1">Masa atomowa: 157.25</span><br><span ><sub>64</sub></span>&nbsp;<span class="pierwiastek1">Gd</span><br><span class="nazwa1">Gadolin</span></div></div>
+
+<div style="display: none;" id="65" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 158.9253</span><br><span ><sub>65</sub></span>&nbsp;<span class="pierwiastek1">Tb</span><br><span class="nazwa1">Terb</span></div></div>
+
+<div style="display: none;" id="66" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 162.500</span><br><span ><sub>66</sub></span>&nbsp;<span class="pierwiastek1">Dy</span><br><span class="nazwa1">Dysproz</span></div></div>
+
+<div style="display: none;" id="67" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 164.9303</span><br><span ><sub>67</sub></span>&nbsp;<span class="pierwiastek1">Ho</span><br><span class="nazwa1">Holm</span></div></div>
+
+<div style="display: none;" id="68" ><div class="descb"><span class="masowa1">Masa atomowa: 167.259</span><br><span ><sub>68</sub></span>&nbsp;<span class="pierwiastek1">Er</span><br><span class="nazwa1">Erb</span></div></div>
+
+<div style="display: none;" id="69" ><div class="descb"><span class="masowa1">Masa atomowa: 168.9342</span><br><span ><sub>69</sub></span>&nbsp;<span class="pierwiastek1">Tm</span><br><span class="nazwa1">Tm</span></div></div>
+
+<div style="display: none;" id="70" ><div class="descb"><span class="masowa1">Masa atomowa: 173.04</span><br><span ><sub>70</sub></span>&nbsp;<span class="pierwiastek1">Yb</span><br><span class="nazwa1">Iterb</span></div></div>
+
+<div style="display: none;" id="71" ><div class="descb"><span class="masowa1">Masa atomowa: 174.967</span><br><span ><sub>71</sub></span>&nbsp;<span class="pierwiastek1">Lu</span><br><span class="nazwa1">Lutet</span></div></div>
+
+<div style="display: none;" id="72" ><div class="descb"><span class="masowa1">Masa atomowa: 178.49</span><br><span ><sub>72</sub></span>&nbsp;<span class="pierwiastek1">Hf</span><br><span class="nazwa1">Hafn</span></div></div>
+
+<div style="display: none;" id="73" ><div class="descb"><span class="masowa1">Masa atomowa: 180.9479</span><br><span ><sub>73</sub></span>&nbsp;<span class="pierwiastek1">Ta</span><br><span class="nazwa1">Tantal</span></div></div>
+
+<div style="display: none;" id="74" ><div class="descb"><span class="masowa1">Masa atomowa: 183.84</span><br><span ><sub>74</sub></span>&nbsp;<span class="pierwiastek1">W</span><br><span class="nazwa1">Wolfram</span></div></div>
+
+<div style="display: none;" id="75" ><div class="descb"><span class="masowa1">Masa atomowa: 186.207</span><br><span ><sub>75</sub></span>&nbsp;<span class="pierwiastek1">Re</span><br><span class="nazwa1">Ren</span></div></div>
+
+<div style="display: none;" id="76" ><div class="descb"><span class="masowa1">Masa atomowa: 190.23</span><br><span ><sub>76</sub></span>&nbsp;<span class="pierwiastek1">Os</span><br><span class="nazwa1">Osm</span></div></div>
+
+<div style="display: none;" id="77" ><div class="descb"><span class="masowa1">Masa atomowa: 192.217</span><br><span ><sub>77</sub></span>&nbsp;<span class="pierwiastek1">Ir</span><br><span class="nazwa1">Iryd</span></div></div>
+
+<div style="display: none;" id="78" ><div class="descb"><span class="masowa1">Masa atomowa: 195.078</span><br><span ><sub>78</sub></span>&nbsp;<span class="pierwiastek1">Pt</span><br><span class="nazwa1">Platyna</span></div></div>
+
+<div style="display: none;" id="79" ><div class="descb"><span class="masowa1">Masa atomowa: 196.9665</span><br><span ><sub>79</sub></span>&nbsp;<span class="pierwiastek1">Au</span><br><span class="nazwa1">Złoto</span></div></div>
+
+<div style="display: none;" id="80" ><div class="descb"><span class="masowa1">Masa atomowa: 200.59</span><br><span ><sub>80</sub></span>&nbsp;<span class="pierwiastek1">Hg</span><br><span class="nazwa1">Rtęć</span></div></div>
+
+<div style="display: none;" id="81" ><div class="descb"><span class="masowa1">Masa atomowa: 204.3833</span><br><span ><sub>81</sub></span>&nbsp;<span class="pierwiastek1">Tl</span><br><span class="nazwa1">Tal</span></div></div>
+
+<div style="display: none;" id="82" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 207.2</span><br><span ><sub>82</sub></span>&nbsp;<span class="pierwiastek1">Pb</span><br><span class="nazwa1">Ołów</span></div></div>
+
+<div style="display: none;" id="83" ><div class="descb"><span class="masowa1">Masa atomowa: 208.9804</span><br><span ><sub>83</sub></span>&nbsp;<span class="pierwiastek1">Bi</span><br><span class="nazwa1">Bizmut</span></div></div>
+
+<div style="display: none;" id="84" ><div class="descb"><span class="masowa1">Masa atomowa: 208.9824</span><br><span ><sub>84</sub></span>&nbsp;<span class="pierwiastek1">Po</span><br><span class="nazwa1">Polon</span></div></div>
+
+<div style="display: none;" id="85" ><div class="descb"><span class="masowa1">Masa atomowa: 209.9871</span><br><span ><sub>85</sub></span>&nbsp;<span class="pierwiastek1">At</span><br><span class="nazwa1">Astat</span></div></div>
+
+<div style="display: none;" id="86" ><div class="descb"><span class="masowa1">Masa atomowa: 222.0176</span><br><span ><sub>86</sub></span>&nbsp;<span class="pierwiastek1">Rn</span><br><span class="nazwa1">Radon</span></div></div>
+
+<div style="display: none;" id="87" ><div class="descb"><span class="masowa1">Masa atomowa: 223.0197</span><br><span ><sub>87</sub></span>&nbsp;<span class="pierwiastek1">Fr</span><br><span class="nazwa1">Frans</span></div></div>
+
+<div style="display: none;" id="88" ><div class="descb"><span class="masowa1">Masa atomowa: 226.0254</span><br><span ><sub>88</sub></span>&nbsp;<span class="pierwiastek1">Ra</span><br><span class="nazwa1">Rad</span></div></div>
+
+<div style="display: none;" id="89" ><div class="descb"><span class="masowa1">Masa atomowa: 227.0277</span><br><span ><sub>89</sub></span>&nbsp;<span class="pierwiastek1">Ac</span><br><span class="nazwa1">Aktyn</span></div></div>
+
+<div style="display: none;" id="90" ><div class="descb"><span class="masowa1">Masa atomowa: 232.0381</span><br><span ><sub>90</sub></span>&nbsp;<span class="pierwiastek1">Th</span><br><span class="nazwa1">Tor</span></div></div>
+
+<div style="display: none;" id="91" ><div class="descb"><span class="masowa1">Masa atomowa: 231.0359</span><br><span ><sub>91</sub></span>&nbsp;<span class="pierwiastek1">Pa</span><br><span class="nazwa1">Proaktyn</span></div></div>
+
+<div style="display: none;" id="92" ><div class="descb"><span class="masowa1">Masa atomowa: 238.02891</span><br><span ><sub>92</sub></span>&nbsp;<span class="pierwiastek1">U</span><br><span class="nazwa1">Uran</span></div></div>
+
+
+<div style="display: none;" id="93" ><div class="descb"><span class="masowa1">Masa atomowa: 237.0482</span><br><span ><sub>93</sub></span>&nbsp;<span class="pierwiastek1">Np</span><br><span class="nazwa1">Neptun</span></div></div>
+
+
+<div style="display: none;" id="94" ><div class="descb"><span class="masowa1">Masa atomowa: 244.0642</span><br><span ><sub>94</sub></span>&nbsp;<span class="pierwiastek1">Pu</span><br><span class="nazwa1">Pluton</span></div></div>
+
+
+<div style="display: none;" id="95" ><div class="descb"><span class="masowa1">Masa atomowa: 243.0614</span><br><span ><sub>95</sub></span>&nbsp;<span class="pierwiastek1">Am</span><br><span class="nazwa1">Ameryk</span></div></div>
+
+
+<div style="display: none;" id="96" ><div class="descb"><span class="masowa1">Masa atomowa: 247.0704</span><br><span ><sub>96</sub></span>&nbsp;<span class="pierwiastek1">Cm</span><br><span class="nazwa1">Kiur</span></div></div>
+
+
+<div style="display: none;" id="97" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 247.0703</span><br><span ><sub>97</sub></span>&nbsp;<span class="pierwiastek1">Bk</span><br><span class="nazwa1">Berkel</span></div></div>
+
+
+<div style="display: none;" id="98" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 251.0796</span><br><span ><sub>98</sub></span>&nbsp;<span class="pierwiastek1">Cf</span><br><span class="nazwa1">Kaliforn</span></div></div>
+
+
+<div style="display: none;" id="99" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 252.083</span><br><span ><sub>99</sub></span>&nbsp;<span class="pierwiastek1">Es</span><br><span class="nazwa1">Einstein</span></div></div>
+
+
+<div style="display: none;" id="100" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 257.0951</span><br><span ><sub>100</sub></span>&nbsp;<span class="pierwiastek1">Fm</span><br><span class="nazwa1">Ferm</span></div></div>
+
+
+<div style="display: none;" id="101" ><div class="descb"><span class="masowa1">Masa atomowa: 258.0984</span><br><span ><sub>101</sub></span>&nbsp;<span class="pierwiastek1">Md</span><br><span class="nazwa1">Mendelew</span></div></div>
+
+
+<div style="display: none;" id="102" ><div class="descb"><span class="masowa1">Masa atomowa: 259.1010</span><br><span ><sub>102</sub></span>&nbsp;<span class="pierwiastek1">No</span><br><span class="nazwa1">Nobel</span></div></div>
+
+
+<div style="display: none;" id="103" ><div class="descb"><span class="masowa1">Masa atomowa: 262.1097</span><br><span ><sub>103</sub></span>&nbsp;<span class="pierwiastek1">Lr</span><br><span class="nazwa1">Lorens</span></div></div>
+
+
+<div style="display: none;" id="104" ><div class="descb"><span class="masowa1">Masa atomowa: 261.1088</span><br><span ><sub>104</sub></span>&nbsp;<span class="pierwiastek1">Rf</span><br><span class="nazwa1">Rutherford</span></div></div>
+
+<div style="display: none;" id="105" ><div class="descb"><span class="masowa1">Masa atomowa: 262.1141</span><br><span ><sub>105</sub></span>&nbsp;<span class="pierwiastek1">Db</span><br><span class="nazwa1">Dubn</span></div></div>
+
+<div style="display: none;" id="106" ><div class="descb"><span class="masowa1">Masa atomowa: 266.1219</span><br><span ><sub>106</sub></span>&nbsp;<span class="pierwiastek1">Sg</span><br><span class="nazwa1">Seaborg</span></div></div>
+
+
+<div style="display: none;" id="107" ><div class="descb"><span class="masowa1">Masa atomowa: 264.12</span><br><span ><sub>107</sub></span>&nbsp;<span class="pierwiastek1">Bh</span><br><span class="nazwa1">Bohr</span></div></div>
+
+
+<div style="display: none;" id="108" ><div class="descb"><span class="masowa1">Masa atomowa: 277</span><br><span ><sub>108</sub></span>&nbsp;<span class="pierwiastek1">Hs</span><br><span class="nazwa1">Has</span></div></div>
+
+
+<div style="display: none;" id="109" ><div class="descb"><span class="masowa1">Masa atomowa: 268.1388</span><br><span ><sub>109</sub></span>&nbsp;<span class="pierwiastek1">Mt</span><br><span class="nazwa1">Meitner</span></div></div>
+
+
+<div style="display: none;" id="110" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 281</span><br><span ><sub>110</sub></span>&nbsp;<span class="pierwiastek1">Ds</span><br><span class="nazwa1">Darmsztadt</span></div></div>
+
+
+<div style="display: none;" id="111" ><div class="descb"><span class="masowa1">Masa atomowa: 272.1535</span><br><span ><sub>111</sub></span>&nbsp;<span class="pierwiastek1">Rg</span><br><span class="nazwa1">Roentgen</span></div></div>
+
+
+<div style="display: none;" id="112" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 285</span><br><span ><sub>112</sub></span>&nbsp;<span class="pierwiastek1">Cn</span><br><span class="nazwa1">Kopernik</span></div></div>
+
+
+<div style="display: none;" id="113" style="display: none;"><div class="descb"><span class="masowa1">Masa atomowa: 284</span><br><span ><sub>113</sub></span>&nbsp;<span class="pierwiastek1">Nh</span><br><span class="nazwa1">Nihon</span></div></div>
+
+
+<div style="display: none;" id="114" ><div class="descb"><span class="masowa1">Masa atomowa: 289</span><br><span ><sub>114</sub></span>&nbsp;<span class="pierwiastek1">Fl</span><br><span class="nazwa1">Flerow</span></div></div>
+
+
+<div style="display: none;" id="115" ><div class="descb"><span class="masowa1">Masa atomowa: 288</span><br><span ><sub>115</sub></span>&nbsp;<span class="pierwiastek1">Mc</span><br><span class="nazwa1">Moskow</span></div></div>
+
+
+<div style="display: none;" id="116" ><div class="descb"><span class="masowa1">Masa atomowa: 292</span><br><span ><sub>116</sub></span>&nbsp;<span class="pierwiastek1">Lv</span><br><span class="nazwa1">Liwermor</span></div></div>
+
+
+<div style="display: none;" id="117" ><div class="descb"><span class="masowa1">Masa atomowa: </span><br><span ><sub>117</sub></span>&nbsp;<span class="pierwiastek1">Ts</span><br><span class="nazwa1">Tenes</span></div></div>
+
+
+<div style="display: none;" id="118" ><div class="descb"><span class="masowa1">Masa atomowa: 294</span><br><span ><sub>118</sub></span>&nbsp;<span class="pierwiastek1">Og</span><br><span class="nazwa1">Oganeson</span></div></div>
+</td><td></td><td colspan="2" rowspan="2">
+
+
+
+</td><td></td><td></td><td></td><td valign="bottom">13</td><td valign="bottom">14</td><td valign="bottom">15</td><td valign="bottom">16</td><td valign="bottom">17</td><td class="komorka" onmouseover="showdescb('2','')" onmouseout="showdescb('2','none')"><a href="index.php?id=2"><div><span ><sub class="nazwa">2</sub></span>&nbsp;<span class="pierwiastek">He</span><br><span class="nazwa">Hel</span></div></a></td>
+
+
+</tr><tr><td class="okres">2</td><td class="komorka" onmouseover="showdescb('3','')" onmouseout="showdescb('3','none')"><a href="index.php?id=3"><div><span ><sub class="nazwa">3</sub></span>&nbsp;<span class="pierwiastek">Li</span><br><span class="nazwa">Lit</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('4','')" onmouseout="showdescb('4','none')"><a href="index.php?id=4"><div><span ><sub class="nazwa">4</sub></span>&nbsp;<span class="pierwiastek">Be</span><br><span class="nazwa">Beryl</span></div></a></td>
+
+
+<td></td><td></td><td></td><td></td><td></td><td class="komorka" onmouseover="showdescb('5','')" onmouseout="showdescb('5','none')"><a href="index.php?id=5"><div><span ><sub class="nazwa">5</sub></span>&nbsp;<span class="pierwiastek">B</span><br><span class="nazwa">Bor</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('6','')" onmouseout="showdescb('6','none')"><a href="index.php?id=6"><div><span ><sub class="nazwa">6</sub></span>&nbsp;<span class="pierwiastek">C</span><br><span class="nazwa">Węgiel</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('7','')" onmouseout="showdescb('7','none')"><a href="index.php?id=7"><div><span ><sub class="nazwa">7</sub></span>&nbsp;<span class="pierwiastek">N</span><br><span class="nazwa">Azot</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('8','')" onmouseout="showdescb('8','none')"><a href="index.php?id=8"><div><span ><sub class="nazwa">8</sub></span>&nbsp;<span class="pierwiastek">O</span><br><span class="nazwa">Tlen</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('9','')" onmouseout="showdescb('9','none')"><a href="index.php?id=9"><div><span ><sub class="nazwa">9</sub></span>&nbsp;<span class="pierwiastek">F</span><br><span class="nazwa">Fluor</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('10','')" onmouseout="showdescb('10','none')"><a href="index.php?id=10"><div><span ><sub class="nazwa">10</sub></span>&nbsp;<span class="pierwiastek">Ne</span><br><span class="nazwa">Neon</span></div></a></td>
+
+
+</tr><tr><td class="okres">3</td><td class="komorka" onmouseover="showdescb('11','')" onmouseout="showdescb('11','none')"><a href="index.php?id=11"><div><span ><sub class="nazwa">11</sub></span>&nbsp;<span class="pierwiastek">Na</span><br><span class="nazwa">Sód</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('12','')" onmouseout="showdescb('12','none')"><a href="index.php?id=12"><div><span ><sub class="nazwa">12</sub></span>&nbsp;<span class="pierwiastek">Mg</span><br><span class="nazwa">Magn.</span></div></a></td>
+
+
+<td valign="bottom">&nbsp;3</td><td valign="bottom">&nbsp;4</td><td valign="bottom">&nbsp;5</td><td valign="bottom">&nbsp;6</td><td valign="bottom">&nbsp;7</td><td valign="bottom">&nbsp;8</td><td valign="bottom">&nbsp;9</td><td valign="bottom">10</td><td valign="bottom">11</td><td valign="bottom">12</td><td class="komorka" onmouseover="showdescb('13','')" onmouseout="showdescb('13','none')"><a href="index.php?id=13"><div><span ><sub class="nazwa">13</sub></span>&nbsp;<span class="pierwiastek">Al</span><br><span class="nazwa">Glin</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('14','')" onmouseout="showdescb('14','none')"><a href="index.php?id=14"><div><span ><sub class="nazwa">14</sub></span>&nbsp;<span class="pierwiastek">Si</span><br><span class="nazwa">Krzem</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('15','')" onmouseout="showdescb('15','none')"><a href="index.php?id=15"><div><span ><sub class="nazwa">15</sub></span>&nbsp;<span class="pierwiastek">P</span><br><span class="nazwa">Fosfor</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('16','')" onmouseout="showdescb('16','none')"><a href="index.php?id=16"><div><span ><sub class="nazwa">16</sub></span>&nbsp;<span class="pierwiastek">S</span><br><span class="nazwa">Siarka</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('17','')" onmouseout="showdescb('17','none')"><a href="index.php?id=17"><div><span ><sub class="nazwa">17</sub></span>&nbsp;<span class="pierwiastek">Cl</span><br><span class="nazwa">Chlor</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('18','')" onmouseout="showdescb('18','none')"><a href="index.php?id=18"><div><span ><sub class="nazwa">18</sub></span>&nbsp;<span class="pierwiastek">Ar</span><br><span class="nazwa">Argon</span></div></a></td>
+
+
+</tr><tr><td class="okres">4</td><td class="komorka" onmouseover="showdescb('19','')" onmouseout="showdescb('19','none')"><a href="index.php?id=19"><div><span ><sub class="nazwa">19</sub></span>&nbsp;<span class="pierwiastek">K</span><br><span class="nazwa">Potas</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('20','')" onmouseout="showdescb('20','none')"><a href="index.php?id=20"><div><span ><sub class="nazwa">20</sub></span>&nbsp;<span class="pierwiastek">Ca</span><br><span class="nazwa">Wapń</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('21','')" onmouseout="showdescb('21','none')"><a href="index.php?id=21"><div><span ><sub class="nazwa">21</sub></span>&nbsp;<span class="pierwiastek">Sc</span><br><span class="nazwa">Skand</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('22','')" onmouseout="showdescb('22','none')"><a href="index.php?id=22"><div><span ><sub class="nazwa">22</sub></span>&nbsp;<span class="pierwiastek">Ti</span><br><span class="nazwa">Tytan</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('23','')" onmouseout="showdescb('23','none')"><a href="index.php?id=23"><div><span ><sub class="nazwa">23</sub></span>&nbsp;<span class="pierwiastek">V</span><br><span class="nazwa">Wanad</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('24','')" onmouseout="showdescb('24','none')"><a href="index.php?id=24"><div><span ><sub class="nazwa">24</sub></span>&nbsp;<span class="pierwiastek">Cr</span><br><span class="nazwa">Chrom</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('25','')" onmouseout="showdescb('25','none')"><a href="index.php?id=25"><div><span ><sub class="nazwa">25</sub></span>&nbsp;<span class="pierwiastek">Mn</span><br><span class="nazwa">Mangan</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('26','')" onmouseout="showdescb('26','none')"><a href="index.php?id=26"><div><span ><sub class="nazwa">26</sub></span>&nbsp;<span class="pierwiastek">Fe</span><br><span class="nazwa">Żelazo</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('27','')" onmouseout="showdescb('27','none')"><a href="index.php?id=27"><div><span ><sub class="nazwa">27</sub></span>&nbsp;<span class="pierwiastek">Co</span><br><span class="nazwa">Kobalt</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('28','')" onmouseout="showdescb('28','none')"><a href="index.php?id=28"><div><span ><sub class="nazwa">28</sub></span>&nbsp;<span class="pierwiastek">Ni</span><br><span class="nazwa">Nikiel</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('29','')" onmouseout="showdescb('29','none')"><a href="index.php?id=29"><div><span ><sub class="nazwa">29</sub></span>&nbsp;<span class="pierwiastek">Cu</span><br><span class="nazwa">Miedź</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('30','')" onmouseout="showdescb('30','none')"><a href="index.php?id=30"><div><span ><sub class="nazwa">30</sub></span>&nbsp;<span class="pierwiastek">Zn</span><br><span class="nazwa">Cynk</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('31','')" onmouseout="showdescb('31','none')"><a href="index.php?id=31"><div><span ><sub class="nazwa">31</sub></span>&nbsp;<span class="pierwiastek">Ga</span><br><span class="nazwa">Gal</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('32','')" onmouseout="showdescb('32','none')"><a href="index.php?id=32"><div><span ><sub class="nazwa">32</sub></span>&nbsp;<span class="pierwiastek">Ge</span><br><span class="nazwa">German</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('33','')" onmouseout="showdescb('33','none')"><a href="index.php?id=33"><div><span ><sub class="nazwa">33</sub></span>&nbsp;<span class="pierwiastek">As</span><br><span class="nazwa">Arsen</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('34','')" onmouseout="showdescb('34','none')"><a href="index.php?id=34"><div><span ><sub class="nazwa">34</sub></span>&nbsp;<span class="pierwiastek">Se</span><br><span class="nazwa">Selen</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('35','')" onmouseout="showdescb('35','none')"><a href="index.php?id=35"><div><span ><sub class="nazwa">35</sub></span>&nbsp;<span class="pierwiastek">Br</span><br><span class="nazwa">Brom</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('36','')" onmouseout="showdescb('36','none')"><a href="index.php?id=36"><div><span ><sub class="nazwa">36</sub></span>&nbsp;<span class="pierwiastek">Kr</span><br><span class="nazwa">Krypt.</span></div></a></td>
+
+
+</tr><tr><td class="okres">5</td><td class="komorka" onmouseover="showdescb('37','')" onmouseout="showdescb('37','none')"><a href="index.php?id=37"><div><span ><sub class="nazwa">37</sub></span>&nbsp;<span class="pierwiastek">Rb</span><br><span class="nazwa">Rubid</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('38','')" onmouseout="showdescb('38','none')"><a href="index.php?id=38"><div><span ><sub class="nazwa">38</sub></span>&nbsp;<span class="pierwiastek">Sr</span><br><span class="nazwa">Stront</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('39','')" onmouseout="showdescb('39','none')"><a href="index.php?id=39"><div><span ><sub class="nazwa">39</sub></span>&nbsp;<span class="pierwiastek">Y</span><br><span class="nazwa">Itr</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('40','')" onmouseout="showdescb('40','none')"><a href="index.php?id=40"><div><span ><sub class="nazwa">40</sub></span>&nbsp;<span class="pierwiastek">Zr</span><br><span class="nazwa">Cyrkon</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('41','')" onmouseout="showdescb('41','none')"><a href="index.php?id=41"><div><span ><sub class="nazwa">41</sub></span>&nbsp;<span class="pierwiastek">Nb</span><br><span class="nazwa">Niob</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('42','')" onmouseout="showdescb('42','none')"><a href="index.php?id=42"><div><span ><sub class="nazwa">42</sub></span>&nbsp;<span class="pierwiastek">Mo</span><br><span class="nazwa">Molibd.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('43','')" onmouseout="showdescb('43','none')"><a href="index.php?id=43"><div><span ><sub class="nazwa">43</sub></span>&nbsp;<span class="pierwiastek">Tc</span><br><span class="nazwa">Technet</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('44','')" onmouseout="showdescb('44','none')"><a href="index.php?id=44"><div><span ><sub class="nazwa">44</sub></span>&nbsp;<span class="pierwiastek">Ru</span><br><span class="nazwa">Ruten</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('45','')" onmouseout="showdescb('45','none')"><a href="index.php?id=45"><div><span ><sub class="nazwa">45</sub></span>&nbsp;<span class="pierwiastek">Rh</span><br><span class="nazwa">Rod</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('46','')" onmouseout="showdescb('46','none')"><a href="index.php?id=46"><div><span ><sub class="nazwa">46</sub></span>&nbsp;<span class="pierwiastek">Pd</span><br><span class="nazwa">Pallad</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('47','')" onmouseout="showdescb('47','none')"><a href="index.php?id=47"><div><span ><sub class="nazwa">47</sub></span>&nbsp;<span class="pierwiastek">Ag</span><br><span class="nazwa">Srebro</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('48','')" onmouseout="showdescb('48','none')"><a href="index.php?id=48"><div><span ><sub class="nazwa">48</sub></span>&nbsp;<span class="pierwiastek">Cd</span><br><span class="nazwa">Kadm</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('49','')" onmouseout="showdescb('49','none')"><a href="index.php?id=49"><div><span ><sub class="nazwa">49</sub></span>&nbsp;<span class="pierwiastek">In</span><br><span class="nazwa">Ind</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('50','')" onmouseout="showdescb('50','none')"><a href="index.php?id=50"><div><span ><sub class="nazwa">50</sub></span>&nbsp;<span class="pierwiastek">Sn</span><br><span class="nazwa">Cyna</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('51','')" onmouseout="showdescb('51','none')"><a href="index.php?id=51"><div><span ><sub class="nazwa">51</sub></span>&nbsp;<span class="pierwiastek">Sb</span><br><span class="nazwa">Antym.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('52','')" onmouseout="showdescb('52','none')"><a href="index.php?id=52"><div><span ><sub class="nazwa">52</sub></span>&nbsp;<span class="pierwiastek">Te</span><br><span class="nazwa">Tellur</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('53','')" onmouseout="showdescb('53','none')"><a href="index.php?id=53"><div><span ><sub class="nazwa">53</sub></span>&nbsp;<span class="pierwiastek">I</span><br><span class="nazwa">Jod</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('54','')" onmouseout="showdescb('54','none')"><a href="index.php?id=54"><div><span ><sub class="nazwa">54</sub></span>&nbsp;<span class="pierwiastek">Xe</span><br><span class="nazwa">Ksenon</span></div></a></td>
+
+
+</tr><tr><td class="okres">6</td><td class="komorka" onmouseover="showdescb('55','')" onmouseout="showdescb('55','none')"><a href="index.php?id=55"><div><span ><sub class="nazwa">55</sub></span>&nbsp;<span class="pierwiastek">Cs</span><br><span class="nazwa">Cez</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('56','')" onmouseout="showdescb('56','none')"><a href="index.php?id=56"><div><span ><sub class="nazwa">56</sub></span>&nbsp;<span class="pierwiastek">Ba</span><br><span class="nazwa">Bar</span></div></a></td>
+
+
+<td style="text-align: center;" class="noactive">*<span class="nazwa">La-Lu</span><br><span class="nazwa">57-71</span></td><td class="komorka" onmouseover="showdescb('72','')" onmouseout="showdescb('72','none')"><a href="index.php?id=72"><div><span ><sub class="nazwa">72</sub></span>&nbsp;<span class="pierwiastek">Hf</span><br><span class="nazwa">Hafn</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('73','')" onmouseout="showdescb('73','none')"><a href="index.php?id=73"><div><span ><sub class="nazwa">73</sub></span>&nbsp;<span class="pierwiastek">Ta</span><br><span class="nazwa">Tantal</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('74','')" onmouseout="showdescb('74','none')"><a href="index.php?id=74"><div><span ><sub class="nazwa">74</sub></span>&nbsp;<span class="pierwiastek">W</span><br><span class="nazwa">Wolfram</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('75','')" onmouseout="showdescb('75','none')"><a href="index.php?id=75"><div><span ><sub class="nazwa">75</sub></span>&nbsp;<span class="pierwiastek">Re</span><br><span class="nazwa">Ren</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('76','')" onmouseout="showdescb('76','none')"><a href="index.php?id=76"><div><span ><sub class="nazwa">76</sub></span>&nbsp;<span class="pierwiastek">Os</span><br><span class="nazwa">Osm</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('77','')" onmouseout="showdescb('77','none')"><a href="index.php?id=77"><div><span ><sub class="nazwa">77</sub></span>&nbsp;<span class="pierwiastek">Ir</span><br><span class="nazwa">Iryd</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('78','')" onmouseout="showdescb('78','none')"><a href="index.php?id=78"><div><span ><sub class="nazwa">78</sub></span>&nbsp;<span class="pierwiastek">Pt</span><br><span class="nazwa">Platyna</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('79','')" onmouseout="showdescb('79','none')"><a href="index.php?id=79"><div><span ><sub class="nazwa">79</sub></span>&nbsp;<span class="pierwiastek">Au</span><br><span class="nazwa">Złoto</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('80','')" onmouseout="showdescb('80','none')"><a href="index.php?id=80"><div><span ><sub class="nazwa">80</sub></span>&nbsp;<span class="pierwiastek">Hg</span><br><span class="nazwa">Rtęć</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('81','')" onmouseout="showdescb('81','none')"><a href="index.php?id=81"><div><span ><sub class="nazwa">81</sub></span>&nbsp;<span class="pierwiastek">Tl</span><br><span class="nazwa">Tal</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('82','')" onmouseout="showdescb('82','none')"><a href="index.php?id=82"><div><span ><sub class="nazwa">82</sub></span>&nbsp;<span class="pierwiastek">Pb</span><br><span class="nazwa">Ołów</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('83','')" onmouseout="showdescb('83','none')"><a href="index.php?id=83"><div><span ><sub class="nazwa">83</sub></span>&nbsp;<span class="pierwiastek">Bi</span><br><span class="nazwa">Bizmut</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('84','')" onmouseout="showdescb('84','none')"><a href="index.php?id=84"><div><span ><sub class="nazwa">84</sub></span>&nbsp;<span class="pierwiastek">Po</span><br><span class="nazwa">Polon</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('85','')" onmouseout="showdescb('85','none')"><a href="index.php?id=85"><div><span ><sub class="nazwa">85</sub></span>&nbsp;<span class="pierwiastek">At</span><br><span class="nazwa">Astat</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('86','')" onmouseout="showdescb('86','none')"><a href="index.php?id=86"><div><span ><sub class="nazwa">86</sub></span>&nbsp;<span class="pierwiastek">Rn</span><br><span class="nazwa">Radon</span></div></a></td>
+
+
+</tr><tr><td class="okres">7</td><td class="komorka" onmouseover="showdescb('87','')" onmouseout="showdescb('87','none')"><a href="index.php?id=87"><div><span ><sub class="nazwa">87</sub></span>&nbsp;<span class="pierwiastek">Fr</span><br><span class="nazwa">Frans</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('88','')" onmouseout="showdescb('88','none')"><a href="index.php?id=88"><div><span ><sub class="nazwa">88</sub></span>&nbsp;<span class="pierwiastek">Ra</span><br><span class="nazwa">Rad</span></div></a></td>
+
+
+<td style="text-align: center;" class="noactive">*<span class="nazwa">Ac-Lr</span><br><span class="nazwa">89-103</span></td><td class="komorka" onmouseover="showdescb('104','')" onmouseout="showdescb('104','none')"><a href="index.php?id=104"><div><span ><sub class="nazwa">104</sub></span>&nbsp;<span class="pierwiastek">Rf</span><br><span class="nazwa">Ruther.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('105','')" onmouseout="showdescb('105','none')"><a href="index.php?id=105"><div><span ><sub class="nazwa">105</sub></span>&nbsp;<span class="pierwiastek">Db</span><br><span class="nazwa">Dubn</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('106','')" onmouseout="showdescb('106','none')"><a href="index.php?id=106"><div><span ><sub class="nazwa">106</sub></span>&nbsp;<span class="pierwiastek">Sg</span><br><span class="nazwa">Seab.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('107','')" onmouseout="showdescb('107','none')"><a href="index.php?id=107"><div><span ><sub class="nazwa">107</sub></span>&nbsp;<span class="pierwiastek">Bh</span><br><span class="nazwa">Bohr</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('108','')" onmouseout="showdescb('108','none')"><a href="index.php?id=108"><div><span ><sub class="nazwa">108</sub></span>&nbsp;<span class="pierwiastek">Hs</span><br><span class="nazwa">Has</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('109','')" onmouseout="showdescb('109','none')"><a href="index.php?id=109"><div><span ><sub class="nazwa">109</sub></span>&nbsp;<span class="pierwiastek">Mt</span><br><span class="nazwa">Meitner</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('110','')" onmouseout="showdescb('110','none')"><a href="index.php?id=110"><div><span ><sub class="nazwa">110</sub></span>&nbsp;<span class="pierwiastek">Ds</span><br><span class="nazwa">Darmst.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('111','')" onmouseout="showdescb('111','none')"><a href="index.php?id=111"><div><span ><sub class="nazwa">111</sub></span>&nbsp;<span class="pierwiastek">Rg</span><br><span class="nazwa">Roentg.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('112','')" onmouseout="showdescb('112','none')"><a href="index.php?id=112"><div><span ><sub class="nazwa">112</sub></span>&nbsp;<span class="pierwiastek">Cn</span><br><span class="nazwa">Koper.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('113','')" onmouseout="showdescb('113','none')"><a href="index.php?id=113"><div><span ><sub class="nazwa">113</sub></span>&nbsp;<span class="pierwiastek">Nh</span><br><span class="nazwa">Nihon</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('114','')" onmouseout="showdescb('114','none')"><a href="index.php?id=114"><div><span ><sub class="nazwa">114</sub></span>&nbsp;<span class="pierwiastek">Fl</span><br><span class="nazwa">Flerow</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('115','')" onmouseout="showdescb('115','none')"><a href="index.php?id=115"><div><span ><sub class="nazwa">115</sub></span>&nbsp;<span class="pierwiastek">Mc</span><br><span class="nazwa">Moskow</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('116','')" onmouseout="showdescb('116','none')"><a href="index.php?id=116"><div><span ><sub class="nazwa">116</sub></span>&nbsp;<span class="pierwiastek">Lv</span><br><span class="nazwa">Liwer.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('117','')" onmouseout="showdescb('117','none')"><a href="index.php?id=117"><div><span ><sub class="nazwa">117</sub></span>&nbsp;<span class="pierwiastek">Ts</span><br><span class="nazwa">Tenes</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('118','')" onmouseout="showdescb('118','none')"><a href="index.php?id=118"><div><span ><sub class="nazwa">118</sub></span>&nbsp;<span class="pierwiastek">Og</span><br><span class="nazwa">Ogane.</span></div></a></td>
+
+
+</tr></tbody></table><br><table border="0" cellpadding="0" cellspacing="3" align="center" width="90%"><tbody><tr><td class="noactive"><span class="pierwiastekt">Lantanowce</span></td><td class="komorka" onmouseover="showdescb('57','')" onmouseout="showdescb('57','none')"><a href="index.php?id=57"><div><span ><sub class="nazwa">57</sub></span>&nbsp;<span class="pierwiastek">La</span><br><span class="nazwa">Lantan</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('58','')" onmouseout="showdescb('58','none')"><a href="index.php?id=58"><div><span ><sub class="nazwa">58</sub></span>&nbsp;<span class="pierwiastek">Ce</span><br><span class="nazwa">Cer</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('59','')" onmouseout="showdescb('59','none')"><a href="index.php?id=59"><div><span ><sub class="nazwa">59</sub></span>&nbsp;<span class="pierwiastek">Pr</span><br><span class="nazwa">Prazeo.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('60','')" onmouseout="showdescb('60','none')"><a href="index.php?id=60"><div><span ><sub class="nazwa">60</sub></span>&nbsp;<span class="pierwiastek">Nd</span><br><span class="nazwa">Neodym</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('61','')" onmouseout="showdescb('61','none')"><a href="index.php?id=61"><div><span ><sub class="nazwa">61</sub></span>&nbsp;<span class="pierwiastek">Pm</span><br><span class="nazwa">Promet</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('62','')" onmouseout="showdescb('62','none')"><a href="index.php?id=62"><div><span ><sub class="nazwa">62</sub></span>&nbsp;<span class="pierwiastek">Sm</span><br><span class="nazwa">Samar</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('63','')" onmouseout="showdescb('63','none')"><a href="index.php?id=63"><div><span ><sub class="nazwa">63</sub></span>&nbsp;<span class="pierwiastek">Eu</span><br><span class="nazwa">Europ</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('64','')" onmouseout="showdescb('64','none')"><a href="index.php?id=64"><div><span ><sub class="nazwa">64</sub></span>&nbsp;<span class="pierwiastek">Gd</span><br><span class="nazwa">Gadolin</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('65','')" onmouseout="showdescb('65','none')"><a href="index.php?id=65"><div><span ><sub class="nazwa">65</sub></span>&nbsp;<span class="pierwiastek">Tb</span><br><span class="nazwa">Terb</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('66','')" onmouseout="showdescb('66','none')"><a href="index.php?id=66"><div><span ><sub class="nazwa">66</sub></span>&nbsp;<span class="pierwiastek">Dy</span><br><span class="nazwa">Dysproz</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('67','')" onmouseout="showdescb('67','none')"><a href="index.php?id=67"><div><span ><sub class="nazwa">67</sub></span>&nbsp;<span class="pierwiastek">Ho</span><br><span class="nazwa">Holm</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('68','')" onmouseout="showdescb('68','none')"><a href="index.php?id=68"><div><span ><sub class="nazwa">68</sub></span>&nbsp;<span class="pierwiastek">Er</span><br><span class="nazwa">Erb</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('69','')" onmouseout="showdescb('69','none')"><a href="index.php?id=69"><div><span ><sub class="nazwa">69</sub></span>&nbsp;<span class="pierwiastek">Tm</span><br><span class="nazwa">Tm</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('70','')" onmouseout="showdescb('70','none')"><a href="index.php?id=70"><div><span ><sub class="nazwa">70</sub></span>&nbsp;<span class="pierwiastek">Yb</span><br><span class="nazwa">Iterb</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('71','')" onmouseout="showdescb('71','none')"><a href="index.php?id=71"><div><span ><sub class="nazwa">71</sub></span>&nbsp;<span class="pierwiastek">Lu</span><br><span class="nazwa">Lutet</span></div></a></td>
+
+
+</tr><tr><td class="noactive"><span class="pierwiastekt">Aktynowce</span></td><td class="komorka" onmouseover="showdescb('89','')" onmouseout="showdescb('89','none')"><a href="index.php?id=89"><div><span ><sub class="nazwa">89</sub></span>&nbsp;<span class="pierwiastek">Ac</span><br><span class="nazwa">Aktyn</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('90','')" onmouseout="showdescb('90','none')"><a href="index.php?id=90"><div><span ><sub class="nazwa">90</sub></span>&nbsp;<span class="pierwiastek">Th</span><br><span class="nazwa">Tor</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('91','')" onmouseout="showdescb('91','none')"><a href="index.php?id=91"><div><span ><sub class="nazwa">91</sub></span>&nbsp;<span class="pierwiastek">Pa</span><br><span class="nazwa">Protak.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('92','')" onmouseout="showdescb('92','none')"><a href="index.php?id=92"><div><span ><sub class="nazwa">92</sub></span>&nbsp;<span class="pierwiastek">U</span><br><span class="nazwa">Uran</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('93','')" onmouseout="showdescb('93','none')"><a href="index.php?id=93"><div><span ><sub class="nazwa">93</sub></span>&nbsp;<span class="pierwiastek">Np</span><br><span class="nazwa">Neptun</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('94','')" onmouseout="showdescb('94','none')"><a href="index.php?id=94"><div><span ><sub class="nazwa">94</sub></span>&nbsp;<span class="pierwiastek">Pu</span><br><span class="nazwa">Pluton</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('95','')" onmouseout="showdescb('95','none')"><a href="index.php?id=95"><div><span ><sub class="nazwa">95</sub></span>&nbsp;<span class="pierwiastek">Am</span><br><span class="nazwa">Ameryk</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('96','')" onmouseout="showdescb('96','none')"><a href="index.php?id=96"><div><span ><sub class="nazwa">96</sub></span>&nbsp;<span class="pierwiastek">Cm</span><br><span class="nazwa">Kiur</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('97','')" onmouseout="showdescb('97','none')"><a href="index.php?id=97"><div><span ><sub class="nazwa">97</sub></span>&nbsp;<span class="pierwiastek">Bk</span><br><span class="nazwa">Berkel</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('98','')" onmouseout="showdescb('98','none')"><a href="index.php?id=98"><div><span ><sub class="nazwa">98</sub></span>&nbsp;<span class="pierwiastek">Cf</span><br><span class="nazwa">Kaliforn</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('99','')" onmouseout="showdescb('99','none')"><a href="index.php?id=99"><div><span ><sub class="nazwa">99</sub></span>&nbsp;<span class="pierwiastek">Es</span><br><span class="nazwa">Einstein</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('100','')" onmouseout="showdescb('100','none')"><a href="index.php?id=100"><div><span ><sub class="nazwa">100</sub></span>&nbsp;<span class="pierwiastek">Fm</span><br><span class="nazwa">Ferm</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('101','')" onmouseout="showdescb('101','none')"><a href="index.php?id=101"><div><span ><sub class="nazwa">101</sub></span>&nbsp;<span class="pierwiastek">Md</span><br><span class="nazwa">Mendel.</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('102','')" onmouseout="showdescb('102','none')"><a href="index.php?id=102"><div><span ><sub class="nazwa">102</sub></span>&nbsp;<span class="pierwiastek">No</span><br><span class="nazwa">Nobel</span></div></a></td>
+
+
+<td class="komorka" onmouseover="showdescb('103','')" onmouseout="showdescb('103','none')"><a href="index.php?id=103"><div><span ><sub class="nazwa">103</sub></span>&nbsp;<span class="pierwiastek">Lr</span><br><span class="nazwa">Lorens</span></div></a></td>
+
+
+</tr></tbody></table>
+                
+                </div>
+				
+		</section>
+		
+	</main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	
+	<script src="js/bootstrap.min.js"></script>
+    
+	
+</body>
+</html>
